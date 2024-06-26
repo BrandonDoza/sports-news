@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
+import './ArticleDetail.css'
 
 export default function ArticleDetail ({articles}) {
     const [singleArticle, setSingleArticle] = useState({})
