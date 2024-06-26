@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import allArticles from '../../mockData';
 import Header from '../Header/Header';
+import MainPage from '../MainPage/MainPage';
 
 function App() {
   const [articles, setArticles] = useState([])
@@ -22,6 +23,9 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Routes>
+        <Route path="/" element={<MainPage articles={articles} />} />
+      </Routes>
     </div>
   );
 }
