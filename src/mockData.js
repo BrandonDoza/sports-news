@@ -1,4 +1,4 @@
-const articles = {
+const allArticles = {
     "status": "ok",
     "totalResults": 7,
     "articles": [
@@ -96,4 +96,4 @@ const articles = {
     ]
 }
 
-export default articles
+export default allArticles
