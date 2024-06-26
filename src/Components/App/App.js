@@ -4,6 +4,7 @@ import './App.css';
 import allArticles from '../../mockData';
 import Header from '../Header/Header';
 import MainPage from '../MainPage/MainPage';
+import ArticleDetail from '../ArticleDetail/ArticleDetail';
 
 function App() {
   const [articles, setArticles] = useState([])
@@ -16,16 +17,19 @@ function App() {
     })
     setArticles(articlesWithIds)
   }
-  
+
   useEffect(() => {
     getArticles()
   },[])
+
   console.log(articles)
+
   return (
     <div className="App">
       <Header />
       <Routes>
         <Route path="/" element={<MainPage articles={articles} />} />
+        <Route path="/:id" element={<ArticleDetail articles={articles} />} />
       </Routes>
     </div>
   );

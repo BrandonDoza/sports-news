@@ -3,3 +3,10 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
 }
+
+.links {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
