@@ -1,7 +1,8 @@
 import {Routes, Route} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './App.css';
-import allArticles from './mockData';
+import allArticles from '../../mockData';
+import Header from '../Header/Header';
 
 function App() {
   const [articles, setArticles] = useState([])
@@ -20,7 +21,7 @@ function App() {
   console.log(articles)
   return (
     <div className="App">
-      
+      <Header />
     </div>
   );
 }
