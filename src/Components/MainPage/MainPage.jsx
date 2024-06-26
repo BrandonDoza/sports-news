@@ -5,8 +5,7 @@ import './MainPage.css'
 export default function MainPage({articles, getSingleArticle}) {
     const allArticleCards = articles.map((article) => {
         return (
-            <NavLink to={`/${article.id}`} onClick={() => {
-                getSingleArticle(article.id)}} key={article.id}>
+            <NavLink to={`/${article.id}`} key={article.id} className="links">
             <ArticleCard
             id={article.id}
             title={article.title}

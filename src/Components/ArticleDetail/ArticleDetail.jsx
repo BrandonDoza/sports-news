@@ -1,16 +1,26 @@
-import { useEffect } from "react"
+import { useState, useEffect } from "react"
+import { useParams } from "react-router-dom"
 
-export default function ArticleDetail ({singleArticle}) {
+export default function ArticleDetail ({articles}) {
+    const [singleArticle, setSingleArticle] = useState({})
     const {urlToImage, title, author, content, description, publishedAt} = singleArticle
-    function formatDate(dateToFormat) {
-        const [date] = dateToFormat.split('T')
-        const [year, month, day] = date.split('-')
-        const formattedDate = `${month}/${day}/${year}`
-        return formattedDate
-    }
-   useEffect(() => {
-    formatDate(publishedAt)
-   }, [])
+    const id = useParams().id
+    const correctId = parseFloat(id)
+
+    function getSingleArticle(id) {
+        const article = articles.find(article => article.id === id)
+        console.log('art', article)
+        return article
+      }
+
+useEffect(() => {
+   const article = getSingleArticle(correctId)
+    setSingleArticle(article)
+}, [])
+
+console.log('single', singleArticle)
+console.log('id', typeof correctId)
+console.log('artssss', articles)
     return (
         <div className="article-detail">
             <h1>{title}</h1>
@@ -18,7 +28,7 @@ export default function ArticleDetail ({singleArticle}) {
             <p>{author}</p>
             <p>{content}</p>
             <p>{description}</p>
-            <p>Date Published: {publishedAt.split('T')}</p>
+            <p>Date Published: {publishedAt}</p>
         </div>
     )
 }
