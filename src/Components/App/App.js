@@ -16,6 +16,7 @@ function App() {
     })
     setArticles(articlesWithIds)
   }
+  
   useEffect(() => {
     getArticles()
   },[])
