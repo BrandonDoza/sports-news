@@ -4,16 +4,16 @@ const allArticles = {
     "articles": [
         {
             "source": {
-                "id": "google-news",
-                "name": "Google News"
+                "id": "associated-press",
+                "name": "Associated Press"
             },
-            "author": "Bleacher Report",
-            "title": "EA's College Football 25 Rankings: Texas A&M, Alabama Lead 'Toughest Places to Play' - Bleacher Report",
-            "description": null,
-            "url": "https://news.google.com/rss/articles/CBMie2h0dHBzOi8vYmxlYWNoZXJyZXBvcnQuY29tL2FydGljbGVzLzEwMTI1OTQxLWVhcy1jb2xsZWdlLWZvb3RiYWxsLTI1LXJhbmtpbmdzLXRleGFzLWFtLWFsYWJhbWEtbGVhZC10b3VnaGVzdC1wbGFjZXMtdG8tcGxhedIBiwFodHRwczovL3N5bmRpY2F0aW9uLmJsZWFjaGVycmVwb3J0LmNvbS9hbXAvMTAxMjU5NDEtZWFzLWNvbGxlZ2UtZm9vdGJhbGwtMjUtcmFua2luZ3MtdGV4YXMtYW0tYWxhYmFtYS1sZWFkLXRvdWdoZXN0LXBsYWNlcy10by1wbGF5LmFtcC5odG1s?oc=5",
-            "urlToImage": null,
-            "publishedAt": "2024-06-25T15:13:54Z",
-            "content": null
+            "author": "STEPHEN WHYNO",
+            "title": "Connor McDavid wins Conn Smythe as playoff MVP despite Oilers losing Stanley Cup Final to Panthers - The Associated Press",
+            "description": "Connor McDavid has won the Conn Smythe Trophy as playoff MVP despite he and the Edmonton Oilers losing the Stanley Cup Final to the Florida Panthers in seven games. McDavid was the biggest reason the Oilers fought back from a 3-0 series deficit to get to Game…",
+            "url": "https://apnews.com/article/stanley-cup-final-mvp-8411b0a440ded0284c1c9c226245a3de",
+            "urlToImage": "https://dims.apnews.com/dims4/default/3f74d1f/2147483647/strip/true/crop/3000x1688+0+238/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F16%2F9e%2Fc7af5649b5c0d7f08a43412f148c%2F1b7d9ceace734223970ec662e71cc484",
+            "publishedAt": "2024-06-25T05:37:00Z",
+            "content": "SUNRISE, Fla. (AP) Connor McDavid won the Conn Smythe Trophy as playoff MVP on Monday night despite Edmontons Stanley Cup Final loss to Florida, a nod to one of the greatest postseason performances i… [+3666 chars]"
         },
         {
             "source": {
@@ -27,32 +27,6 @@ const allArticles = {
             "urlToImage": "https://images2.minutemediacdn.com/image/upload/c_crop,w_5480,h_3082,x_0,y_0/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/images/ImagnImages/mmsport/si/01j17vtyydy2c4ejrx8p.jpg",
             "publishedAt": "2024-06-25T15:12:14Z",
             "content": "The Los Angeles Lakers finally have a new head coach in place so the team's attention can turn to the 2024 NBA draft and the upcoming season. First up they have to navigate the draft, which is the fi… [+1748 chars]"
-        },
-        {
-            "source": {
-                "id": "google-news",
-                "name": "Google News"
-            },
-            "author": "NHL.com",
-            "title": "Avalanche Re-Signs Mittelstadt | Colorado Avalanche - NHL.com",
-            "description": null,
-            "url": "https://news.google.com/rss/articles/CBMiQWh0dHBzOi8vd3d3Lm5obC5jb20vYXZhbGFuY2hlL25ld3MvYXZhbGFuY2hlLXJlLXNpZ25zLW1pdHRlbHN0YWR00gEA?oc=5",
-            "urlToImage": null,
-            "publishedAt": "2024-06-25T15:05:32Z",
-            "content": null
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "[Removed]"
-            },
-            "author": null,
-            "title": "[Removed]",
-            "description": "[Removed]",
-            "url": "https://removed.com",
-            "urlToImage": null,
-            "publishedAt": "1970-01-01T00:00:00Z",
-            "content": "[Removed]"
         },
         {
             "source": {
@@ -83,15 +57,15 @@ const allArticles = {
         {
             "source": {
                 "id": null,
-                "name": "247Sports"
+                "name": "Athlon Sports"
             },
-            "author": "247Sports",
-            "title": "2025 Mock Class 3.0: Post-June official visit edition - 247Sports",
-            "description": null,
-            "url": "https://247sports.com/college/georgia/longformarticle/2025-mock-class-30-post-june-official-visit-edition-233147801/",
-            "urlToImage": null,
-            "publishedAt": "2024-06-25T13:17:35Z",
-            "content": null
+            "author": "Max Escarpio",
+            "title": "Scottie Scheffler's Wife Sent Simple Message To Tom Kim After Travelers Championship - Athlon Sports",
+            "description": "Scottie Scheffler's wife sends honest message to Tom Kim at PGA Tour event.",
+            "url": "https://athlonsports.com/golf/scottie-scheffler-wife-sent-simple-message-tom-kim-after-travelers-championship",
+            "urlToImage": "https://athlonsports.com/.image/t_share/MjA2NzIwODU1NjM4NTQ5OTUw/usatsi_23361867.jpg",
+            "publishedAt": "2024-06-25T07:57:35Z",
+            "content": "Scottie Scheffler's wife, Meredith Scheffler, met with Tom Kim after the Travelers Championship, sharing high praise for the tournament runner-up. Scheffler beat Kim in a one-hole playoff, finishing … [+994 chars]"
         }
     ]
 }
