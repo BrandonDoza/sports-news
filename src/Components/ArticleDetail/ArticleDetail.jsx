@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom"
+import { useParams, NavLink } from "react-router-dom"
 import './ArticleDetail.css'
 
 export default function ArticleDetail ({articles}) {
@@ -30,6 +30,9 @@ console.log('artssss', articles)
             <p>{content}</p>
             <p>{description}</p>
             <p>Date Published: {publishedAt}</p>
+            <NavLink to="/">
+                <button>Home</button>
+                </NavLink>
         </div>
     )
 }
