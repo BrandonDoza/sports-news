@@ -3,10 +3,11 @@
     flex-direction: column;
     align-items: center;
     width: 70%;
-    height: 550px;
+    height: 350px;
     border: 2px solid black;
     border-radius: 5px;
     margin: 5px;
+    overflow: auto;
 }
 
 img {
@@ -15,8 +16,7 @@ img {
     margin-top: 10px;
 }
 
-p {
-    width: 75%;
-    height: 100px;
-    overflow: auto;
+.card-title {
+    font-size: large;
+    margin: 5px;
 }
