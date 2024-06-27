@@ -43,8 +43,8 @@ export default function MainPage({articles}) {
         <div>
             <div>
             <form className='form'>
-                <label htmlFor='input'>Search Articles By Keyword</label>
-                <input 
+                <label htmlFor='input' className='label'>Search Articles By Keyword</label>
+                <input className='input'
                 type='text'
                 name='input'
                 placeholder='Enter a Keyword'
