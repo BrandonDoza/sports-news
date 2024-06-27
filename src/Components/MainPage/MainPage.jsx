@@ -22,7 +22,6 @@ export default function MainPage({ articles }) {
   useEffect(() => {
     setArticlesToDisplay(articles);
   }, [articles]);
-  console.log(articlesToDisplay, "display");
   function handleChange(e) {
     setFormData(e.target.value);
     filterArticles(e.target.value);
