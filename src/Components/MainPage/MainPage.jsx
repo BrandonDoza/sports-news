@@ -30,7 +30,7 @@ export default function MainPage({ articles }) {
 
   function filterArticles(input) {
     const filteredArticles = articles.filter((article) =>
-      article.description.toLowerCase().includes(input)
+      article.description.toLowerCase().includes(input.toLowerCase())
     );
     if (formData === "") {
       setArticlesToDisplay(articles);

@@ -19,7 +19,7 @@ describe('Sports News', () => {
     cy.get('h1').contains('Sports News')
   })
   it('Shoulde be able to search for articles by a keyword', () => {
-    cy.get('input').type('Lakers')
+    cy.get('.input').type('lakers')
     cy.get('.article-cards').should('have.length', 1)
     cy.get('.article-cards').first().contains('Lakers Looking to Trade First Round Pick, Per Report - Sports Illustrated').click()
     cy.get('.article-detail').contains('The Lakers plans might include trading No. 17.')
