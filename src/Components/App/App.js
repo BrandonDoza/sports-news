@@ -25,6 +25,12 @@ function App() {
     });
   }
 
+  function formatDate(dateStr) {
+    const date = new Date(dateStr);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString('en-US', options);
+}
+
   useEffect(() => {
     loadArticles();
   }, []);
@@ -33,8 +39,8 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<MainPage articles={articles} />} />
-        <Route path="/:id" element={<ArticleDetail articles={articles} />} />
+        <Route path="/" element={<MainPage articles={articles} formatDate={formatDate} />} />
+        <Route path="/:id" element={<ArticleDetail articles={articles} formatDate={formatDate} />} />
       </Routes>
     </div>
   );

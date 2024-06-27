@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, NavLink } from "react-router-dom";
 import "./ArticleDetail.css";
 
-export default function ArticleDetail({ articles }) {
+export default function ArticleDetail({ articles, formatDate }) {
   const [singleArticle, setSingleArticle] = useState({});
   const { urlToImage, title, author, content, description, publishedAt } =
     singleArticle;
@@ -26,7 +26,7 @@ export default function ArticleDetail({ articles }) {
       <p>{author}</p>
       <p>{content}</p>
       <p>{description}</p>
-      <p>Date Published: {publishedAt}</p>
+      <p>Date Published: {formatDate(publishedAt)}</p>
       <NavLink to="/">
         <button className="home-button">Home</button>
       </NavLink>

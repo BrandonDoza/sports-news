@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import ArticleCard from "../ArticleCards/ArticleCards";
 import "./MainPage.css";
 
-export default function MainPage({ articles }) {
+export default function MainPage({ articles, formatDate }) {
   const [articlesToDisplay, setArticlesToDisplay] = useState([]);
   const [formData, setFormData] = useState("");
   const articleCards = articlesToDisplay.map((article) => {
@@ -13,7 +13,7 @@ export default function MainPage({ articles }) {
           id={article.id}
           title={article.title}
           img={article.urlToImage}
-          description={article.description}
+          date={formatDate(article.publishedAt)}
         />
       </NavLink>
     );
@@ -22,7 +22,6 @@ export default function MainPage({ articles }) {
   useEffect(() => {
     setArticlesToDisplay(articles);
   }, [articles]);
-  console.log(articlesToDisplay, "display");
   function handleChange(e) {
     setFormData(e.target.value);
     filterArticles(e.target.value);
