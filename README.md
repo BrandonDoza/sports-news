@@ -7,7 +7,7 @@
 
 ## Installation Instructions:
 ### Clone the repo to your machine
-- git clone 
+- git clone git@github.com:BrandonDoza/sports-news.git
 - cd sports-news
 - npm install to install packages
 - npm start to run the local server
